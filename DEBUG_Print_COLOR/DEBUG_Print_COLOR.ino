@@ -81,5 +81,9 @@ void setup() {
 
 void loop() {
   DEBUG(RED, "device power off -> low_battery !!! %d %d %s %s", 10, __LINE__, __FILE__, __FUNCTION__);
+  
+  // очищаем консоль
+  //printf("\033[0;0H \033[2j");
+  
   delay(1000);
 }
